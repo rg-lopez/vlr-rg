@@ -1,0 +1,13 @@
+section.about-page {
+    position: relative;
+    background-image: url("/wp-content/themes/vlr/src/images/bg-iv.png");
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-color: #111111;
+    height: 100vh;
+    padding: 0px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}

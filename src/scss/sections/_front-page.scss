@@ -1,0 +1,98 @@
+section.front-page {
+    background-image: url("/wp-content/themes/vlr/src/images/front-page.png");
+    background-size: cover;
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #111111;
+    height: 100vh;
+    padding: 0px 24px;
+
+
+    .watermark {
+        display: flex;
+        flex-direction: column;
+        color: #1f1f1f;
+        position: absolute;
+        top: 16px;
+
+        .heading {
+
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 46px;
+            }
+
+            .title {
+                font-family: $primary-font;
+                font-size: 64px;
+                margin-left: 10px;
+            }
+
+        }
+
+        .sub-heading {
+            font-family: $secondary-font;
+            font-weight: 700;
+            margin-top: -7px;
+            margin-left: 57px;
+        }
+    }
+
+    .main-nav {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 300px;
+
+        .nav-item {
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .icon {
+                height: 9px;
+                width: 9px;
+                background-color: #C5B174;
+                transform: rotate(135deg);
+                transition: margin-left 0.2s ease, transform 0.1s;
+            }
+
+            .title {
+                margin-left: 20px;
+                transition: margin-left 0.15s ease;
+                text-transform: uppercase;
+                font-size: 64px;
+                color: #1f1f1f;
+            }
+
+            &.active {
+
+
+                .title {
+                    font-size: 124px;
+                    line-height: 110px;
+                    // color: #12d4b4;
+                    color: #C5B174;
+                }
+            }
+
+            &:hover {
+                .icon {
+                    transform: rotate(-45deg);
+                }
+
+                .title {
+                    color: #12d4b4;
+                    margin-left: 35px;
+                }
+            }
+        }
+    }
+}

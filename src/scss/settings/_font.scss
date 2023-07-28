@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Tungsten;
+    src: url("/wp-content/themes/vlr/fonts/Tungsten-Bold.otf");
+}
+
+@font-face {
+    font-family: DinNext;
+    src: url("/wp-content/themes/vlr/fonts/DIN-Next-Regular.ttf");
+}
+
+
+$primary-font: Tungsten;
+$secondary-font: DinNext;
+
+// Weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
