@@ -10,6 +10,11 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+
+    /* Hide scrollbars */
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 main {
@@ -20,6 +25,15 @@ main {
     box-sizing: border-box;
     -webkit-appearance: none;
     outline: none;
+}
+
+nav {
+    z-index: 9;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
 
 figure {

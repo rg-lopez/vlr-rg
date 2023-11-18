@@ -1,13 +1,241 @@
 section.about-page {
     position: relative;
-    background-image: url("/wp-content/themes/vlr/src/images/bg-iv.png");
+    // background-image: url("/wp-content/themes/vlr/src/images/blur-bg.png");
+    // background-image: url("/wp-content/themes/vlr/src/images/bg-iv-overlay-white-2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: lighten;
-    background-color: #111111;
-    height: 100vh;
-    padding: 0px 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    // height: 100vh;
+    width: 100%;
+    pointer-events: none;
+
+    .hero-about {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* text-align: center; */
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        pointer-events: none;
+
+        .header-group {
+            margin-top: 60px;
+            text-align: center;
+
+            .subtext {
+                font-family: $secondary-font;
+                font-size: 12px;
+                color: #12d4b4;
+                letter-spacing: 6px;
+
+            }
+
+            .heading-wrapper {
+                width: 100%;
+                min-height: 10rem;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                position: relative;
+
+                .header-outline {
+                    -webkit-text-stroke: 1px #a7a7a7 !important;
+                    z-index: 4;
+                    color: transparent;
+                    text-align: center;
+                    margin-bottom: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: $primary-font;
+                    font-size: 10rem;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    overflow: hidden;
+                }
+
+                .header {
+                    color: #0e0e0e;
+                    font-size: 156px;
+                    z-index: 2;
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-family: $primary-font;
+                    font-size: 10rem;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
+            }
+
+
+            img {
+                position: relative;
+                margin-top: -124px;
+                width: 600px;
+                z-index: 3;
+            }
+        }
+    }
+
+    .intro {
+        background-image: url("/wp-content/themes/vlr/src/images/blur-bg-2.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .wrapper {
+            max-width: 1060px;
+            color: #fff;
+        }
+    }
+
+    .avatar {
+        position: absolute;
+        right: -72px;
+        width: 730px;
+        top: 50px;
+    }
+}
+
+section.intro {
+
+    padding: 200px 0;
+
+    &.black {
+        background-image: url("/wp-content/themes/vlr/src/images/portfolio-bg.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .wrapper {
+            max-width: 1060px;
+            color: #fff;
+        }
+    }
+
+    .wrapper {
+        max-width: 1060px;
+        color: #fff;
+
+        span {
+            font-family: $secondary-font;
+            font-size: 12px;
+            color: #12d4b4;
+            letter-spacing: 6px;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 70px;
+            margin: 20px 0 30px;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+section#about {
+    background-image: url('/wp-content/themes/vlr/src/images/bg-iv-overlay-white-2.png');
+    min-height: 500px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .wrapper {
+
+        .section-header {
+            text-align: center;
+            padding: 130px 0 90px;
+            text-transform: uppercase;
+
+            h2 {
+                font-size: 70px;
+                font-family: $primary-font;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-size: 12px;
+                color: #12d4b4;
+                letter-spacing: 6px;
+                font-weight: 800;
+            }
+        }
+
+        .section-content {
+            padding-bottom: 200px;
+            text-align: center;
+
+            .box {
+                border: 1px solid transparent;
+                display: inline-block;
+                width: 300px;
+                height: 400px;
+                background: rgb(0 0 0 / 78%);
+                color: #fff;
+                padding: 15px;
+                text-align: center;
+                margin: 0 40px;
+
+                img {
+                    margin: 30px 0 10px;
+                    width: 90px;
+                }
+
+                .skill {
+                    font-family: $primary-font;
+                    font-size: 34px;
+                    letter-spacing: 0px;
+                    font-style: italic;
+                }
+
+                .description {
+                    font-family: $secondary-font;
+                    margin-top: 34px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                transition: transform 0.3s;
+            }
+
+            .box:hover {
+                background: rgb(255 255 255 / 44%);
+                color: #010101;
+                transform: scale(1.15);
+                border: 1px solid #12d4b4;
+            }
+        }
+    }
+}
+
+section.parallax {
+    background-image: url("/wp-content/themes/vlr/src/images/bg-iv-overlay.png");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

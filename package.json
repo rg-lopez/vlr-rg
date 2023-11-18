@@ -23,6 +23,9 @@
     "sass-loader": "^12.1.0"
   },
   "dependencies": {
-    "@flaticon/flaticon-uicons": "^2.3.0"
+    "@flaticon/flaticon-uicons": "^2.3.0",
+    "@splidejs/splide": "^4.1.4",
+    "autoprefixer": "10.4.5",
+    "tiny-slider": "^2.9.4"
   }
 }

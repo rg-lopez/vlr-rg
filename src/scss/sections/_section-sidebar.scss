@@ -5,6 +5,7 @@ section.sidebar {
     height: 100%;
     display: flex;
     transition: right 0.3s ease;
+    z-index: 98;
 
     &:hover {
         right: 0;
@@ -22,11 +23,11 @@ section.sidebar {
     }
 
     .sidebar-main {
-        background-color: rgb(21 32 43 / 92%);
+        background-color: rgb(24 24 24 / 96%);
         width: 274px;
 
         .sidebar-header {
-            background-color: rgb(47 54 60 / 74%);
+            background-color: rgb(57 57 57 / 74%);
             color: #d5d7d8;
             text-transform: uppercase;
             padding: 20px 22px;
@@ -39,7 +40,7 @@ section.sidebar {
         .sidebar-item {
             display: flex;
             flex-direction: row;
-            background-color: rgb(44 54 64 / 85%);
+            background-color: rgb(55 55 55 / 41%);
             color: #fff;
             padding: 5px;
             cursor: pointer;

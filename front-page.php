@@ -2,8 +2,8 @@
 <section class="front-page">
     <div class="watermark">
         <div class="heading">
-            <img src="<?= get_template_directory_uri() ?>/src/images/logo-gold.png" alt="">
-            <div class="title">IRIDESCENT</div>
+            <img src="<?= get_template_directory_uri() ?>/src/images/logo-teal.png" alt="">
+            <div class="title">IVRY-X</div>
         </div>
         <div class="sub-heading">LOPEZ /// REGINA</div>
     </div>
@@ -17,7 +17,7 @@
             <span class="icon"></span>
             <div class="title">About</div>
         </a>
-        <a href="#" class="nav-item">
+        <a href="<?= get_template_directory_uri() ?>/portfolio" class="nav-item">
             <span class="icon"></span>
             <div class="title">Portfolio</div>
         </a>
